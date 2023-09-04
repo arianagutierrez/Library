@@ -304,7 +304,7 @@ footer {
   
 @media only screen and (max-width: 430px) {
     .header {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .information {
@@ -312,8 +312,8 @@ footer {
     }
     .element {
         font-size: 9.5px;
-        padding-top: 20px;
-        padding-right: 15px;
+        padding-top: 25px;
+        padding-right: 10px;
     }
     
     .books-grid {
@@ -325,5 +325,12 @@ footer {
 
     .btn-card {
         width: 15vh;
+    }
+
+    .footer {
+        font-size: 10px;
+    }
+    .modal {
+        left: 20%;
     }
 }
