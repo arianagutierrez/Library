@@ -1,3 +1,3 @@
 # Library
 
-A simple library:
+A simple library for your books:
