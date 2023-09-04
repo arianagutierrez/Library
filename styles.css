@@ -307,15 +307,15 @@ footer {
         width: 40%;
     }
     .element {
-        font-size: 9.5px;
-        padding: 25px 10px 0px 10px;
+        font-size: 9px;
+        padding: 25px 12px 0px 12px;
     }
     
     .books-grid {
         max-height: 650px;
     }
     .book-card {
-        font-size: 10px;
+        font-size: 15px;
         padding: 15px;
     }
 
@@ -324,10 +324,7 @@ footer {
         width: 15vh;
     }
 
-    .footer {
-        font-size: 10px;
-    }
     .modal {
-        left: 15%;
+        left: 12%;
     }
 }
