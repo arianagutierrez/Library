@@ -303,6 +303,10 @@ footer {
 }
   
 @media only screen and (max-width: 430px) {
+    .header {
+        font-size: 15px;
+    }
+    
     .information {
         width: 40%;
     }
@@ -312,7 +316,7 @@ footer {
     
     .books-grid {
         max-height: 600px;
-        width: 70%;
+        width: 85%;
     }
     .book-card {
         padding: 20px;
