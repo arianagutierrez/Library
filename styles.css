@@ -266,6 +266,10 @@ footer {
 }
 
 @media only screen and (max-width: 2000px) {
+    #addBookBtn {
+    height: 4vh;
+    }
+    
     .btn-card {
         height: 4vh;
         width: 5vh;
