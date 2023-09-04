@@ -265,6 +265,13 @@ footer {
     background-color: rgba(231, 123, 184, 0.7);
 }
 
+@media only screen and (max-width: 2000px) {
+    .btn-card {
+        height: 4vh;
+        width: 15vh;
+    }
+}
+
 @media only screen and (max-width: 850px) {
     .header {
         font-size: 20px;
