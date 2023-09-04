@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.cdnfonts.com/css/lt-nutshell-library-black" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/jokioinen" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/school-new" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/type-machine" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/warnai-brush" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon-books.png" /> <!--icon tab-->
+    <title>Library</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <h1>library</h1>
+        </div>
+    </header>
+    
+    <main>
+        <div class="information">
+            <div class="element">
+                <h2 class="title">Information</h2>
+                <div class="data">
+                  <div class="info">
+                    <h3>Total books</h3>
+                    <span id="total-books">0</span>
+                  </div>
+                  <div class="info">
+                    <h3>Books read</h3>
+                    <span id="books-read">0</span>
+                  </div>
+                  <div class="info">
+                    <h3>Pages read</h3>
+                    <span id="pages-read">0</span>
+                  </div>
+                  <div class="info">
+                    <h3>Books unread</h3>
+                    <span id="books-unread">0</span>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="library">
+            <button class="btn btn-add" id="addBookBtn">+ Add book</button>
+            <div class="books-grid" id="booksGrid"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="footer"> 
+            Copyright © 
+            <script>document.write(new Date().getFullYear())</script> 
+            Ariana Gutierrez 
+        </p>
+        <a class="footer" href="https://github.com/arianagutierrez" target="_blank">
+              <i class="fa fa-github-square"></i>
+        </a>
+    </footer>
+    
+    <div class="modal" id="addBookModal">
+        <form class="add-book-form" id="addBookForm">
+          <h3>Add new book</h3>
+          <input
+            class="input"
+            type="text"
+            id="title"
+            placeholder="Title"
+            required
+            maxlength="50"
+          />
+          <p class="error-msg" id="errorMsg"></p>
+          <input
+            class="input"
+            type="text"
+            id="author"
+            placeholder="Author"
+            required
+            maxlength="50"
+          />
+          <input
+            class="input"
+            type="number"
+            id="pages"
+            placeholder="Pages"
+            required
+            max="10000"
+          />
+          <div class="is-read">
+            <label for="isRead">Did you read it?</label>
+            <input class="checkbox" type="checkbox" id="isRead" />
+          </div>
+          <button class="btn btn-form" type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="modal" id="accountModal"></div>
+      <div class="overlay" id="overlay"></div>
+
+      <script src="script.js"></script>
+</body>
+</html>

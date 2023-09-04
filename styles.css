@@ -1,0 +1,320 @@
+:root {
+    --fontH: 'LT Nutshell Library Black', sans-serif;
+    --fontI: 'Jokioinen', sans-serif;
+    --fontBC: 'School Book New', sans-serif;
+    --fontFM: 'Type Machine', sans-serif;
+    --fontW: 'WARNAI REGULAR', sans-serif;
+
+    --firstColor: #81034B;
+    --white: #fff;
+    --secondColor: #3C0022;
+    --thirdColor: #CF4091;
+    --fourthColor: #BB0D70;
+    --fifthColor: #E77BB8;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--fourthColor);
+}
+body::-webkit-scrollbar-track {
+    background-color: var(--secondColor);
+} 
+
+.header {
+    width: 100%;
+    height: 12vh;
+    background-color: var(--firstColor);
+    font-family: var(--fontH);
+    letter-spacing: 1em;
+    font-size: 30px;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: var(--thirdColor);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.information {
+    background-color: var(--secondColor);
+    color: var(--white);
+    width: 26%;
+}
+.element {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    font-family: var(--fontI);
+    font-size: 15px;
+    letter-spacing: 0.2em;
+    padding: 50px 40px 0px 25px; /*top, right, bottom, left*/
+}
+.info {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.library {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+
+#addBookBtn {
+    height: 7vh;
+    width: 12%;
+    margin-top: 0.7em;
+    box-shadow: 3px 4px rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    font-family: var(--fontI);
+    font-size: 17.5px;
+}
+
+#addBookBtn:hover {
+    background-color: var(--secondColor);
+    color: var(--white);
+    box-shadow: 4px 2px rgba(255, 255, 255, 0.9);
+}
+
+.books-grid {
+    max-height: 500px;
+    width: 90%;
+    display: grid; 
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 22px;
+    overflow-y: auto;
+}
+
+.books-grid::-webkit-scrollbar {
+    width: 10px;
+}
+.books-grid::-webkit-scrollbar-thumb {
+    background-color: var(--fourthColor);
+}
+.books-grid::-webkit-scrollbar-track {
+    background-color: var(--secondColor);
+} 
+  
+.book-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--fontBC);
+    font-size: 18px;
+    color: var(--white);
+    letter-spacing: 0.1em; line-height: 1.2; 
+    background-color: var(--fourthColor);
+    box-shadow: 7px 8px 2px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    border: 1px solid white;
+    gap: 20px;
+    padding: 25px;
+}
+.author {
+    color: rgba(0, 0, 0);
+}
+
+.btn-card {
+    height: 6vh;
+    width: 25vh;
+    border-radius: 5px;
+    background-color: #000000;
+    color: var(--white);
+    font-family: var(--fontBC);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 5px;
+}
+
+footer {
+    height: 6.5vh;
+    background-color: var(--firstColor);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--fontH);
+    letter-spacing: 2px;
+}
+
+.footer {
+    color: var(--white);
+    font-size: 20px;
+}
+
+.fa {
+    transition: transform 0.2s ease-in-out;
+}
+  
+.fa:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 300px;
+    background-color: var(--firstColor);
+    padding: 25px;
+    border-radius: 10px;
+    left: 42%;
+    box-shadow: 7px 8px 3px rgba(0, 0, 0, 0.9);
+    font-family: var(--fontBC);
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+  
+.add-book-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+  
+.add-book-form button {
+    width: 50%;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 20px;
+    font-family: var(--fontBC);
+    text-transform: uppercase;
+    background-color: var(--white);
+}
+  
+.add-book-form button:hover {
+    background-color: var(--fourthColor);
+    color: var(--white);
+    border: 3px solid black;
+}
+
+.error-msg {
+    text-align: center;
+    font-family: var(--fontW);
+    color: #FF4F4F;
+    padding: 5px;
+    font-size: 38px;
+    line-height: 0.8;
+    margin: 0;
+}
+  
+.input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: var(--fontFM);
+    font-size: 20px;
+    align-items: center;
+}
+  
+.is-read {
+    display: flex;
+    gap: 10px;
+}
+  
+.checkbox {
+    width: 20px;
+    height: 20px;
+    accent-color: white;
+}
+  
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(231, 123, 184, 0.7);
+}
+
+@media only screen and (max-width: 850px) {
+    .header {
+        font-size: 20px;
+    }
+    
+    .information {
+        width: 35%;
+    }
+    .element {
+        font-size: 10px;
+        padding-top: 40px;
+        padding-right: 25px;
+    }
+    
+    #addBookBtn {
+        width: 30%;
+    }
+
+    .books-grid {
+        max-height: 470px;
+        gap: 20px;
+        margin-bottom: 10px;
+    }
+
+    .book-card {
+        padding: 25px;
+    }
+
+    .footer {
+        font-size: 15px;
+    }
+
+    .modal {
+        left: 25%;
+    }
+}
+  
+@media only screen and (max-width: 415px) {
+    .information {
+        width: 40%;
+    }
+    .element {
+        font-size: 9.5px;
+    }
+    
+    .books-grid {
+        max-height: 600px;
+    }
+
+    .btn-card {
+        width: 15vh;
+    }
+}
