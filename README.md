@@ -1,3 +1,3 @@
 # Library
 
-A simple [libray](https://arianagutierrez.github.io/Library/) for your books.
+A simple [library](https://arianagutierrez.github.io/Library/) for your books.
