@@ -268,7 +268,7 @@ footer {
 @media only screen and (max-width: 2000px) {
     .btn-card {
         height: 4vh;
-        width: 15vh;
+        width: 10vh;
     }
 }
 
