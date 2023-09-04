@@ -317,4 +317,8 @@ footer {
     .btn-card {
         width: 15vh;
     }
+
+    .footer {
+        font-size: 15px;
+    }
 }
