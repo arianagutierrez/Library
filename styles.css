@@ -306,7 +306,9 @@ footer {
     .header {
         font-size: 15px;
     }
-    
+    main {
+        width: 100%;
+    }
     .information {
         width: 40%;
     }
@@ -315,8 +317,7 @@ footer {
     }
     
     .books-grid {
-        max-height: 600px;
-        width: 85%;
+        max-height: 650px;
     }
     .book-card {
         padding: 20px;
