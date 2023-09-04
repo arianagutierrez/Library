@@ -294,7 +294,7 @@ footer {
     }
 
     .footer {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .modal {
@@ -316,9 +316,5 @@ footer {
 
     .btn-card {
         width: 15vh;
-    }
-
-    .footer {
-        font-size: 15px;
     }
 }
