@@ -315,13 +315,13 @@ footer {
         max-height: 650px;
     }
     .book-card {
-        font-size: 15px;
         padding: 15px;
     }
 
     .btn-card {
         font-size: 10px;
-        width: 15vh;
+        height: 6vh;
+        width: 10vh;
     }
 
     .modal {
