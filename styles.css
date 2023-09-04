@@ -292,9 +292,6 @@ footer {
     .book-card {
         padding: 25px;
     }
-    .btn-card {
-        width: 15vh;
-    }
 
     .footer {
         font-size: 20px;
@@ -321,3 +318,28 @@ footer {
         width: 15vh;
     }
 }
+
+@media only screen and (max-width: 415px) {
+    .information {
+        width: 40%;
+    }
+    .element {
+        font-size: 9.5px;
+    }
+    
+    .books-grid {
+        max-height: 600px;
+    }
+
+    .btn-card {
+        width: 15vh;
+    }
+}
+
+@media only screen and (max-width: 200px) {
+    .btn-card {
+        width: 12vh;
+    }
+}
+
+
