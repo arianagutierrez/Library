@@ -281,8 +281,8 @@ footer {
     
     #addBookBtn {
         width: 30%;
+        font-size: 15px;
     }
-
     
     .books-grid {
         max-height: 470px;
@@ -304,6 +304,10 @@ footer {
 }
   
 @media only screen and (max-width: 430px) {
+    body {
+        height: 110vh;
+        width: 100.8%;
+    }
     .information {
         width: 45%;
     }
@@ -314,6 +318,7 @@ footer {
     
     .books-grid {
         max-height: 660px;
+        width: 100%;
     }
     .book-card {
         padding: 15px;
